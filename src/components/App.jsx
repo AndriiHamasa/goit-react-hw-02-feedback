@@ -39,7 +39,6 @@ class App extends Component {
           ) : (
             <p>No feedback given</p>
           )}
-          {/* <Statistics options={ this.state} /> */}
         </Section>
       </div>
     );

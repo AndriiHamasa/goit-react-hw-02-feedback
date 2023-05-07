@@ -5,7 +5,7 @@
 
 }
 
-.btn{
+.good, .neutral, .bad{
   width: 80px;
   padding: 5px 10px;
   border-radius: 8px;
@@ -16,17 +16,15 @@
 }
 
 .good{
-  composes: btn;
+  
   background-color: #90EE90;
 }
 
 .neutral{
-  composes: btn;
   background-color: #ADD8E6;
 }
 
 .bad{
-  composes: btn;
   background-color: #FFC0CB;
 }
 
