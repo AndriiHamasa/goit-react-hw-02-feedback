@@ -13,18 +13,13 @@ export const Statistics = ({ options }) => {
   };
 
   return (
-    <div>
-      <h2>Statistics</h2>
-
-      <ul className={css.list}>
-        
-        <li className={css.text}>Good: {options.good}</li>
-        <li className={css.text}>Neutral: {options.neutral}</li>
-        <li className={css.text}>Bad: {options.bad}</li>
-        <li className={css.text}>Total: {getTotal()}</li>
-        <li className={css.text}>Positive feedback: {getPosFeed()}%</li>
-      </ul>
-    </div>
+    <ul className={css.list}>
+      <li className={css.text}>Good: {options.good}</li>
+      <li className={css.text}>Neutral: {options.neutral}</li>
+      <li className={css.text}>Bad: {options.bad}</li>
+      <li className={css.text}>Total: {getTotal()}</li>
+      <li className={css.text}>Positive feedback: {getPosFeed()}%</li>
+    </ul>
   );
 };
 

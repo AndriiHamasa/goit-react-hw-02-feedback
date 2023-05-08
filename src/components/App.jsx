@@ -23,6 +23,7 @@ class App extends Component {
         style={{
           marginTop: '50px',
           display: 'flex',
+          flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
           fontSize: 30,
@@ -34,6 +35,8 @@ class App extends Component {
             options={Object.keys(this.state)}
             onLeaveFeedback={this.handleLeaveFeedback}
           />
+        </Section>
+        <Section title='Statistics'>
           {Object.values(this.state).some(el => el !== 0) ? (
             <Statistics options={this.state} />
           ) : (
@@ -46,3 +49,5 @@ class App extends Component {
 }
 
 export default App;
+
+
